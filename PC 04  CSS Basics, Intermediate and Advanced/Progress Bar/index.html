@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Skills Progress Bar</title>
+    <style>
+        /* CSS STYLES */
+
+        /* General Reset */
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: #fff;
+            padding: 20px;
+            font-family: Arial, sans-serif; /* Default sans-serif for general UI */
+        }
+
+        .container {
+            width: 100%;
+            max-width: 600px;
+            /* No margin auto to keep it left aligned like the screenshot */
+        }
+
+        /* "Output:" Label Styling */
+        .output-label {
+            font-weight: bold;
+            text-decoration: underline;
+            font-size: 16px;
+            color: #000;
+            margin-bottom: 20px;
+            display: block;
+        }
+
+        /* "My Skills" Heading Styling */
+        h1.main-title {
+            font-family: "Times New Roman", Times, serif; /* Serif font matches image */
+            font-size: 32px;
+            color: #000;
+            margin-bottom: 20px;
+            font-weight: bold;
+            /* Subtle text shadow helps simulate the font weight in the image */
+            text-shadow: 0.5px 0 0 #000; 
+        }
+
+        /* Skill Labels (HTML, PHP) */
+        .skill-label {
+            font-family: "Times New Roman", Times, serif; /* Serif font */
+            font-size: 18px;
+            font-weight: bold;
+            color: #000;
+            margin-bottom: 5px;
+            margin-top: 25px;
+            text-transform: uppercase;
+        }
+
+        /* The Gray Background Bar (Track) */
+        .progress-track {
+            width: 100%;
+            height: 30px;
+            background-color: #c0c0c0; /* Standard light gray */
+            border-radius: 15px; /* Creates the rounded pill shape */
+            overflow: hidden; /* Keeps inner bar inside the curves */
+        }
+
+        /* The Green Fill Bar */
+        .progress-fill {
+            height: 100%;
+            background-color: #1ef250; /* Vibrant Neon Green */
+            border-radius: 15px; 
+            display: flex;
+            align-items: center; /* Vertically center text */
+            justify-content: flex-end; /* Push text to the right */
+            padding-right: 15px; /* Spacing for the text */
+        }
+
+        /* Width Utilities */
+        .w-80 { width: 80%; }
+        .w-60 { width: 60%; }
+
+        /* Percentage Text inside the bar */
+        .percent-text {
+            color: #fff;
+            font-family: Arial, sans-serif;
+            font-size: 14px;
+        }
+
+        /* Bottom Divider Line */
+        .divider {
+            margin-top: 30px;
+            border: 0;
+            border-top: 1px solid #a0a0a0;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <!-- Top Label -->
+        <span class="output-label">Output:</span>
+
+        <!-- Main Title -->
+        <h1 class="main-title">My Skills</h1>
+
+        <!-- Skill 1: HTML -->
+        <div class="skill-item">
+            <div class="skill-label">HTML</div>
+            <div class="progress-track">
+                <div class="progress-fill w-80">
+                    <span class="percent-text">80%</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Skill 2: PHP -->
+        <div class="skill-item">
+            <div class="skill-label">PHP</div>
+            <div class="progress-track">
+                <div class="progress-fill w-60">
+                    <span class="percent-text">60%</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Horizontal Line -->
+        <hr class="divider">
+    </div>
+
+</body>
+</html>

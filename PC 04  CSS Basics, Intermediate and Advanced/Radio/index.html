@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Radio Selection UI</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <div class="main-container">
+        <!-- Top Label -->
+        <h4 class="output-label">Output:</h4>
+
+        <!-- Card Container -->
+        <div class="card">
+            
+            <!-- Header -->
+            <div class="card-header">
+                Select your option
+            </div>
+
+            <!-- Options List -->
+            <div class="card-body">
+                
+                <!-- Option 1: Gamer -->
+                <label class="option-row">
+                    <input type="radio" name="profession" value="gamer">
+                    <span class="custom-radio"></span>
+                    <span class="label-text">Gamer</span>
+                </label>
+
+                <!-- Option 2: YouTuber (Selected) -->
+                <!-- We add the 'selected' class here to match the image default state -->
+                <label class="option-row selected">
+                    <input type="radio" name="profession" value="youtuber" checked>
+                    <span class="custom-radio"></span>
+                    <span class="label-text">YouTuber</span>
+                </label>
+
+                <!-- Option 3: Student -->
+                <label class="option-row">
+                    <input type="radio" name="profession" value="student">
+                    <span class="custom-radio"></span>
+                    <span class="label-text">Student</span>
+                </label>
+
+                <!-- Option 4: Developer -->
+                <label class="option-row">
+                    <input type="radio" name="profession" value="developer">
+                    <span class="custom-radio"></span>
+                    <span class="label-text">Developer</span>
+                </label>
+
+            </div>
+        </div>
+
+        <!-- Bottom Line -->
+        <hr class="divider">
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Vertical Text Layout</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+      background-color: #f0f0f0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .container {
+      display: flex;
+      width: 500px;
+      height: 200px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    }
+
+    .left {
+      background-color: #0f4c81;
+      width: 80px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .left span {
+      transform: rotate(-90deg);
+      color: black;
+      font-weight: bold;
+      font-size: 1.2rem;
+    }
+
+    .right {
+      background-color: #add8e6;
+      flex: 1;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: black;
+      font-size: 1.2rem;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="left">
+      <span>Some text</span>
+    </div>
+    <div class="right">
+      Lorem ipsum dolor
+    </div>
+  </div>
+</body>
+</html>

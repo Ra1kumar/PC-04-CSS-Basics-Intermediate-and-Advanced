@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Mirror Image Design</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 40px;
+      background-color: #f0f0f0;
+      font-family: Arial, sans-serif;
+    }
+
+    h2 {
+      font-size: 1.5rem;
+      margin-bottom: 20px;
+    }
+
+    .mirror-section {
+      display: flex;
+      gap: 20px;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .image-box {
+      width: 300px;
+      height: auto;
+    }
+
+    .image-box img {
+      width: 100%;
+      height: auto;
+      display: block;
+      border: 2px solid #ccc;
+      border-radius: 8px;
+    }
+
+    .mirror-box img {
+      transform: scaleX(-1); /* flips the image horizontally */
+    }
+  </style>
+</head>
+<body>
+  <h2>Mirror Input and Output</h2>
+  <div class="mirror-section">
+    <div class="image-box">
+      <p><strong>Mirror_input:</strong></p>
+      <img src="sunflower.jpg" alt="Original sunflower image" />
+    </div>
+    <div class="image-box mirror-box">
+      <p><strong>Mirror_output:</strong></p>
+      <img src="sunflower.jpg" alt="Mirrored sunflower image" />
+    </div>
+  </div>
+</body>
+</html>
